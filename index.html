@@ -1,81 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cardano Viet Community</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardano Việt Nam</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header, footer {
+      background: #f4f4f4;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #3f51b5;
+    }
+    .banner {
+      text-align: center;
+      margin: 3rem auto;
+      font-size: 1.25rem;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      width: 300px;
+    }
+    .card h3 {
+      text-align: center;
+      color: #222;
+    }
+    .pool-info {
+      background: #fffefa;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .pool-info h2 {
+      text-align: center;
+    }
+    .pool-info p {
+      margin: 0.5rem 0;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Cardano Vietnam Community</h1>
-    <nav>
-      <a href="#home">Trang chủ</a>
-      <a href="#wallet">Ví</a>
-      <a href="#pool">Thông tin Pool</a>
-    </nav>
-  </header>
 
-  <section id="wallet">
-    <h2>Kết nối ví</h2>
-    <div id="wallet-buttons" style="margin-bottom: 10px;"></div>
-    <p>Địa chỉ ví: <span id="wallet-address"></span></p>
-  </section>
+<header>
+  Cardano Việt Nam
+  <nav>
+    <a href="#">Cardano360</a>
+    <a href="#">SmartContract</a>
+    <a href="#">Tin tức</a>
+    <a href="#">Bạn cần biết</a>
+    <a href="https://t.me/ADA_VIET">Telegram ↗</a>
+  </nav>
+</header>
 
-  <section id="pool">
-    <h2>Thông tin Pool</h2>
-    <p>Pool Name: <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_name"></span></p>
-    <p>Pool ID: <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_pool_id"></span> 
-    (<span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_pool_id_hash"></span>)</p>
-    <p>Live Stake: <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_stake"></span> ADA</p>
-    <p>Costs: <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_tax_ratio"></span>% +  
-      <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_tax_fix"></span> ADA</p>
-    <p>Blocks in epoch: <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_blocks_epoch"></span></p>
-    <p>Blocks Lifetime: <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_blocks_lifetime"></span></p>
-    <p>Return (10 epochs): <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_roa_short"></span>%</p>
-    <p>Return (lifetime): <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_roa_lifetime"></span>%</p>
-    <p>Pledge: <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_pledge"></span> ADA</p>
-    <p>Delegators: <span id="pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_delegators"></span></p>
-    <p>More info on <a href="https://cexplorer.io/pool/pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl">cexplorer.io</a></p>
-  </section>
+<section class="banner">
+  <button>Cardano Blockchain Certified Associate</button>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Cardano Vietnam Community. All rights reserved.</p>
-  </footer>
+<section class="cards">
+  <div class="card">
+    <h3>Thấu hiểu Cardano</h3>
+    <p>Cardano 360 | Roadmap | IOG | Catalyst | eUTXO | Hydra | Djed...</p>
+  </div>
+  <div class="card">
+    <h3>Smart Contract</h3>
+    <p>Giới thiệu | Haskell | Plutus | Marlowe | JavaScript | công cụ dev...</p>
+  </div>
+  <div class="card">
+    <h3>Tin tức & Cộng đồng</h3>
+    <p>Bài viết | Podcast | Tin vắn | Videos | Catalyst | Việt hóa...</p>
+  </div>
+</section>
 
-  <script type="module">
-    import { meshWallets, BrowserWallet } from "https://unpkg.com/@meshsdk/core@1.4.2?module";
-    async function connectWallet(walletName) {
-      const wallet = await BrowserWallet.enable(walletName);
-      const address = await wallet.getChangeAddress();
-      document.getElementById('wallet-address').innerText = address;
-    }
+<section class="pool-info">
+  <h2>Thông tin Pool</h2>
+  <p>Pool Name: <span id="pool1tnymy_name"></span></p>
+  <p>Pool ID: <span id="pool1tnymy_pool_id"></span> (<span id="pool1tnymy_pool_id_hash"></span>)</p>
+  <p>Live Stake: <span id="pool1tnymy_stake"></span> ADA</p>
+  <p>Costs: <span id="pool1tnymy_tax_ratio"></span>% + <span id="pool1tnymy_tax_fix"></span> ADA</p>
+  <p>Blocks in epoch: <span id="pool1tnymy_blocks_epoch"></span></p>
+  <p>Blocks Lifetime: <span id="pool1tnymy_blocks_lifetime"></span></p>
+  <p>Return (10 epochs): <span id="pool1tnymy_roa_short"></span>%</p>
+  <p>Return (lifetime): <span id="pool1tnymy_roa_lifetime"></span>%</p>
+  <p>Pledge: <span id="pool1tnymy_pledge"></span> ADA</p>
+  <p>Delegators: <span id="pool1tnymy_delegators"></span></p>
+  <p><a href="https://cexplorer.io/pool/pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl">More info on cexplorer.io</a></p>
+</section>
 
-    window.onload = async () => {
-      const wallets = await BrowserWallet.getInstalledWallets();
-      const container = document.getElementById("wallet-buttons");
+<footer>
+  © 2025 Cardano Vietnam. All rights reserved.
+</footer>
 
-      wallets.forEach((walletName) => {
-        if (["nami", "eternl"].includes(walletName)) {
-          const btn = document.createElement("button");
-          btn.innerText = `Kết nối ${walletName}`;
-          btn.onclick = () => connectWallet(walletName);
-          container.appendChild(btn);
-        }
-      });
-    };
-  </script>
-
-  <script>
-    $.getJSON("https://js.cexplorer.io/api-static/pool/pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl.json", function(data) { 
-      $.each(data.data, function(i, val) { 
-        const fields = ['tax_fix', 'pledge', 'stake'];
-        if (fields.includes(i)) val = Math.round(parseInt(val) / 1000000);
-        if (i == 'blocks_lifetime') val = parseInt(val) + parseInt(data.data.blocks_epoch);
-        $('#pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl_' + i).html(val).text();   
-      }); 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $.getJSON("https://js.cexplorer.io/api-static/pool/pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl.json", function(data) {
+    $.each(data.data, function(i, val) {
+      let keys = ['tax_fix','pledge','stake'];
+      if(keys.includes(i)) val = Math.round(parseInt(val)/1000000);
+      if(i === 'blocks_lifetime') val = parseInt(val) + parseInt(data.data.blocks_epoch);
+      $('#pool1tnymy_' + i).html(val);
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
