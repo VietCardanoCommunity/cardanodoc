@@ -2,66 +2,173 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cộng đồng Cardano Việt Nam</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .banner {
+      background: url('https://images.unsplash.com/photo-1618005198919-d3d4b6f33294') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .banner p {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .banner button {
+      background: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      font-weight: 600;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      max-width: 350px;
+      background: #f9f9f9;
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    .card img {
+      width: 60px;
+      height: auto;
+    }
+
+    footer {
+      background: #f0f0f0;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .sections {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- HEADER NAVIGATION -->
-  <nav class="navbar">
+  <header>
     <div class="logo">Cardano Việt nam</div>
-    <ul class="nav-links">
-      <li><a href="#">Cardano360</a></li>
-      <li><a href="#">SmartContract</a></li>
-      <li><a href="#">Tin tức</a></li>
-      <li><a href="#">Bạn cần biết</a></li>
-    </ul>
-    <div class="nav-right">
-      <a href="#" class="nav-link">Telegram ↗</a>
-      <button class="dark-mode-toggle">🌙</button>
-      <input type="text" placeholder="Search" class="search-box" />
+    <nav>
+      <ul>
+        <li><a href="#">Cardano360</a></li>
+        <li><a href="#">SmartContract</a></li>
+        <li><a href="#">Tin tức</a></li>
+        <li><a href="#">Bạn cần biết</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <a href="#" target="_blank">Telegram ↗</a>
+      <input type="text" placeholder="Search" />
+      <button title="Dark mode">🌙</button>
     </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero">
-    <h1>Cộng đồng Cardano Việt nam</h1>
-    <p>Vì một thế giới Phi tập trung hơn</p>
-    <a href="#" class="button">Cardano Blockchain Certified Associate</a>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <section class="features">
-    <div class="feature">
-      <img src="images/icon1.png" alt="Hiểu Cardano">
+  <div class="banner">
+    <h1>Cộng đồng Cardano Việt nam</h1>
+    <p>Vì một thế giới Phi tập trung hơn</p>
+    <button>Cardano Blockchain Certified Associate</button>
+  </div>
+
+  <section class="sections">
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/100/000000/mountains.png" alt="Hiểu Cardano" />
       <h3>Thấu hiểu Cardano</h3>
       <p>Cardano 360 | Roadmap | IOG | Staking | Catalyst | eUTXO | Hydra | Stablecoin Djed | Sidechain | Mithril | Ví | Ouroboros | CIP | Native token | Charles Hoskinson | So sánh blockchain | What's next - 2023? | dRep</p>
     </div>
-
-    <div class="feature">
-      <img src="images/icon2.png" alt="Smart Contract">
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/100/000000/code.png" alt="Smart Contract" />
       <h3>Smart Contract</h3>
       <p>Giới thiệu chung | Haskell | Plutus | Marlowe | Các công cụ dành cho nhà lập trình | Javascript | Python | Mã code mẫu (Plutus)</p>
     </div>
-
-    <div class="feature">
-      <img src="images/icon3.png" alt="Tin tức & Cộng đồng">
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/100/000000/news.png" alt="Tin tức & Cộng đồng" />
       <h3>Tin tức & Cộng đồng</h3>
-      <p>Tin tức & sự kiện | Bài viết công nghệ | Phân tích và bình luận | Tin vắn | Podcast | Videos | Cardano Summit 2023 | Kinh nghiệm đầu tư | Bạn cần biết | Hệ sinh thái dApp | Cardano Runner</p>
+      <p>Tin Tức & Sự kiện | Bài viết công nghệ | Phân tích và bình luận | Tin vấn | Podcast | Videos | Cardano Summit 2023 | Kinh nghiệm đầu tư | Bạn cần biết | Hệ sinh thái dApp | Cardano Runner</p>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Cộng đồng Cardano Việt Nam. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#">Giới thiệu</a> |
-      <a href="#">Liên hệ</a> |
-      <a href="#">Điều khoản</a>
-    </div>
+    © 2025 Cộng đồng Cardano Việt Nam. All rights reserved.
   </footer>
-
 </body>
 </html>
