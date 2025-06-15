@@ -1,67 +1,53 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Viet Cardano Community</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardano Documentation</title>
+  <link rel="icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="nav container">
-      <img src="assets/logo.png" alt="Cardano Logo" class="logo">
+  <header class="navbar">
+    <div class="container">
+      <img src="img/logo.svg" alt="Cardano Logo" class="logo" />
       <nav>
-        <a href="#about">Giới thiệu</a>
-        <a href="#docs">Tài liệu</a>
-        <a href="#community">Cộng đồng</a>
-        <a href="#join" class="btn">Tham gia</a>
+        <a href="#">Docs</a>
+        <a href="#">Blog</a>
+        <a href="#">Community</a>
+        <a href="https://github.com/VietCardanoCommunity/cardanodoc" target="_blank">GitHub</a>
       </nav>
-    </div>
-    <div class="hero container">
-      <h1>Chào mừng đến với cộng đồng Cardano Việt Nam</h1>
-      <p>Nơi phát triển tài liệu, trao đổi & đồng hành cùng hệ sinh thái Cardano.</p>
-      <a href="#docs" class="btn hero-btn">Bắt đầu ngay</a>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="section">
-      <h2>Về chúng tôi</h2>
-      <p>Viet Cardano Community là nơi quy tụ những người đam mê Cardano, cùng tạo nên hệ sinh thái minh bạch và bền vững.</p>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <h1>Cardano Documentation Portal</h1>
+      <p>Cung cấp tài liệu kỹ thuật và hướng dẫn sử dụng cho hệ sinh thái Cardano.</p>
+      <a href="docs/intro" class="button">Bắt đầu ngay</a>
+    </div>
+  </section>
 
-    <section id="docs" class="section features">
-      <h2>Tài liệu cho người Việt</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Cơ bản</h3>
-          <p>Những hướng dẫn khởi đầu, phù hợp với người mới tìm hiểu Cardano.</p>
-        </div>
-        <div class="card">
-          <h3>Nâng cao</h3>
-          <p>Phân tích chuyên sâu các khái niệm, công nghệ và kỹ thuật của Cardano.</p>
-        </div>
-        <div class="card">
-          <h3>Dự án & Hệ sinh thái</h3>
-          <p>Tổng hợp các dự án, tool và cộng đồng trong hệ sinh thái Cardano.</p>
-        </div>
+  <section class="features">
+    <div class="container grid">
+      <div class="feature-box">
+        <h2>Tài liệu chính thức</h2>
+        <p>Chi tiết đầy đủ về cách triển khai, phát triển và vận hành các ứng dụng trên Cardano.</p>
       </div>
-    </section>
-
-    <section id="community" class="section">
-      <h2>Cộng đồng</h2>
-      <p>Tham gia diễn đàn, kênh chat và event để kết nối với các thành viên khác.</p>
-    </section>
-
-    <section id="join" class="section cta">
-      <h2>Tham gia cùng chúng tôi!</h2>
-      <a href="https://github.com/VietCardanoCommunity/cardanodoc" class="btn">Xem trên GitHub</a>
-    </section>
-  </main>
+      <div class="feature-box">
+        <h2>Cộng đồng mạnh mẽ</h2>
+        <p>Tham gia cùng hàng ngàn nhà phát triển, người đóng góp và người dùng Cardano trên toàn cầu.</p>
+      </div>
+      <div class="feature-box">
+        <h2>Hỗ trợ lâu dài</h2>
+        <p>Được cập nhật liên tục bởi VietCardanoCommunity và các thành viên trong hệ sinh thái.</p>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
-      <p>© 2025 Viet Cardano Community · <a href="https://github.com/VietCardanoCommunity">GitHub</a></p>
+      <p>&copy; 2025 VietCardanoCommunity. Built with ❤️ and Docusaurus.</p>
     </div>
   </footer>
 </body>
