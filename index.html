@@ -2,173 +2,134 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cộng đồng Cardano Việt Nam</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardano Việt Nam</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-    }
-
     body {
-      background-color: #fff;
-      color: #111;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #fdfdfd;
+      color: #333;
     }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    header, footer {
+      background: #f4f4f4;
       padding: 1rem 2rem;
-      background: #fff;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #000;
-      font-weight: 500;
-    }
-
-    .actions {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .banner {
-      background: url('https://images.unsplash.com/photo-1618005198919-d3d4b6f33294') center/cover no-repeat;
-      color: #fff;
       text-align: center;
-      padding: 100px 20px 60px;
-    }
-
-    .banner h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .banner p {
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .banner button {
-      background: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
       font-weight: 600;
     }
-
-    .sections {
+    nav {
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      padding: 4rem 2rem;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #3f51b5;
+    }
+    .banner {
+      text-align: center;
+      margin: 3rem auto;
+      font-size: 1.25rem;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
       flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
     }
-
     .card {
-      flex: 1 1 300px;
-      max-width: 350px;
-      background: #f9f9f9;
-      border-radius: 16px;
+      background: white;
       padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      width: 300px;
     }
-
     .card h3 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .card p {
-      color: #333;
-      font-size: 0.95rem;
-    }
-
-    .card img {
-      width: 60px;
-      height: auto;
-    }
-
-    footer {
-      background: #f0f0f0;
-      padding: 1.5rem;
       text-align: center;
-      font-size: 0.9rem;
-      color: #555;
+      color: #222;
     }
-
-    @media (max-width: 768px) {
-      .sections {
-        flex-direction: column;
-        align-items: center;
-      }
+    .pool-info {
+      background: #fffefa;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .pool-info h2 {
+      text-align: center;
+    }
+    .pool-info p {
+      margin: 0.5rem 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">Cardano Việt nam</div>
-    <nav>
-      <ul>
-        <li><a href="#">Cardano360</a></li>
-        <li><a href="#">SmartContract</a></li>
-        <li><a href="#">Tin tức</a></li>
-        <li><a href="#">Bạn cần biết</a></li>
-      </ul>
-    </nav>
-    <div class="actions">
-      <a href="https://t.me/ADA_VIET" target="https://t.me/ADA_VIET">Telegram ↗</a>
-      <input type="text" placeholder="Search" />
-      <button title="Dark mode">🌙</button>
-    </div>
-  </header>
 
-  <div class="banner">
-    <h1>Cộng đồng Cardano Việt nam</h1>
-    <p>Vì một thế giới Phi tập trung hơn</p>
-    <button>Cardano Blockchain Certified Associate</button>
+<header>
+  Cardano Việt Nam
+  <nav>
+    <a href="#">Cardano360</a>
+    <a href="#">SmartContract</a>
+    <a href="#">Tin tức</a>
+    <a href="#">Bạn cần biết</a>
+    <a href="#">Telegram ↗</a>
+  </nav>
+</header>
+
+<section class="banner">
+  <button>Cardano Blockchain Certified Associate</button>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <h3>Thấu hiểu Cardano</h3>
+    <p>Cardano 360 | Roadmap | IOG | Catalyst | eUTXO | Hydra | Djed...</p>
   </div>
+  <div class="card">
+    <h3>Smart Contract</h3>
+    <p>Giới thiệu | Haskell | Plutus | Marlowe | JavaScript | công cụ dev...</p>
+  </div>
+  <div class="card">
+    <h3>Tin tức & Cộng đồng</h3>
+    <p>Bài viết | Podcast | Tin vắn | Videos | Catalyst | Việt hóa...</p>
+  </div>
+</section>
 
-  <section class="sections">
-    <div class="card">
-      <img src="https://github.com/VietCardanoCommunity/cardanodoc/blob/gh-pages/images/DUY09825.jpg" alt="Hiểu Cardano" />
-      <h3>Thấu hiểu Cardano</h3>
-      <p>Cardano 360 | Roadmap | IOG | Staking | Catalyst | eUTXO | Hydra | Stablecoin Djed | Sidechain | Mithril | Ví | Ouroboros | CIP | Native token | Charles Hoskinson | So sánh blockchain | What's next - 2023? | dRep</p>
-    </div>
-    <div class="card">
-      <img src="https://github.com/VietCardanoCommunity/cardanodoc/blob/gh-pages/images/Sang.png" alt="Smart Contract" />
-      <h3>Smart Contract</h3>
-      <p>Giới thiệu chung | Haskell | Plutus | Marlowe | Các công cụ dành cho nhà lập trình | Javascript | Python | Mã code mẫu (Plutus)</p>
-    </div>
-    <div class="card">
-      <img src="https://img.icons8.com/ios-filled/100/000000/news.png" alt="Tin tức & Cộng đồng" />
-      <h3>Tin tức & Cộng đồng</h3>
-      <p>Tin Tức & Sự kiện | Bài viết công nghệ | Phân tích và bình luận | Tin vấn | Podcast | Videos | Cardano Summit 2023 | Kinh nghiệm đầu tư | Bạn cần biết | Hệ sinh thái dApp | Cardano Runner</p>
-    </div>
-  </section>
+<section class="pool-info">
+  <h2>Thông tin Pool</h2>
+  <p>Pool Name: <span id="pool1tnymy_name"></span></p>
+  <p>Pool ID: <span id="pool1tnymy_pool_id"></span> (<span id="pool1tnymy_pool_id_hash"></span>)</p>
+  <p>Live Stake: <span id="pool1tnymy_stake"></span> ADA</p>
+  <p>Costs: <span id="pool1tnymy_tax_ratio"></span>% + <span id="pool1tnymy_tax_fix"></span> ADA</p>
+  <p>Blocks in epoch: <span id="pool1tnymy_blocks_epoch"></span></p>
+  <p>Blocks Lifetime: <span id="pool1tnymy_blocks_lifetime"></span></p>
+  <p>Return (10 epochs): <span id="pool1tnymy_roa_short"></span>%</p>
+  <p>Return (lifetime): <span id="pool1tnymy_roa_lifetime"></span>%</p>
+  <p>Pledge: <span id="pool1tnymy_pledge"></span> ADA</p>
+  <p>Delegators: <span id="pool1tnymy_delegators"></span></p>
+  <p><a href="https://cexplorer.io/pool/pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl">More info on cexplorer.io</a></p>
+</section>
 
-  <footer>
-    © 2025 Cộng đồng Cardano Việt Nam. All rights reserved.
-  </footer>
+<footer>
+  © 2025 Cardano Vietnam. All rights reserved.
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $.getJSON("https://js.cexplorer.io/api-static/pool/pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl.json", function(data) {
+    $.each(data.data, function(i, val) {
+      let keys = ['tax_fix','pledge','stake'];
+      if(keys.includes(i)) val = Math.round(parseInt(val)/1000000);
+      if(i === 'blocks_lifetime') val = parseInt(val) + parseInt(data.data.blocks_epoch);
+      $('#pool1tnymy_' + i).html(val);
+    });
+  });
+</script>
+
 </body>
 </html>
