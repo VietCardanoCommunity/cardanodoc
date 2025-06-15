@@ -1,8 +1,8 @@
 {
-  "name": "lastest",
-  "version": "0.0.0",
+  "name": "cardanodoc",
+  "version": "0.0.1",
   "private": true,
-  "homepage": "https://VietCardanoCommunity.github.io/cardanodoc"
+  "homepage": "https://VietCardanoCommunity.github.io/cardanodoc",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -13,9 +13,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc",
-    "deploy": "docusaurus deploy",
-    "build": "docusaurus build"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
